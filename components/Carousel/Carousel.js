@@ -21,12 +21,12 @@
 var slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
+// next/previous controls //
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
+// thumbnail image controls //
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }

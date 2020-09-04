@@ -30,7 +30,7 @@ A component is a small bit of re-useable code that help with elements and other 
 
 // My CODE //
 
-const mainHeader = document.querySelector('.header-container');
+const mainHeader = document.querySelector('.header-container'); // mount point
 
 mainHeader.appendChild(Header());
 

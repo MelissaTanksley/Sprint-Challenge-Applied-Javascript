@@ -21,7 +21,7 @@
 
 // My CODE //
 
-const cardCreator = document.querySelector('.cards-container')
+const cardCreator = document.querySelector('.cards-container') // mount point
 
 axios.get(" https://lambda-times-backend.herokuapp.com/articles")
 .then((res)=> {

@@ -18,6 +18,8 @@
   </div>
 */
 
+// My CODE //
+
 var slideIndex = 1;
 showSlides(slideIndex);
 

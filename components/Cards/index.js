@@ -19,6 +19,8 @@
 //
 // Use your function to create a card for each of the articles and add the card to the DOM.
 
+// My CODE //
+
 const cardCreator = document.querySelector('.cards-container')
 
 axios.get(" https://lambda-times-backend.herokuapp.com/articles")
@@ -33,7 +35,7 @@ axios.get(" https://lambda-times-backend.herokuapp.com/articles")
 
     console.log(allArticles)
 
-    allArticles.forEach((article)=>{
+    allArticles.forEach((article)=> {
         const newArticle = newArticlesCreator(article);
         cardCreator.appendChild(newArticle);
 
@@ -41,7 +43,7 @@ axios.get(" https://lambda-times-backend.herokuapp.com/articles")
 
 })
 
-function newArticlesCreator(object){
+function newArticlesCreator(object) {
     const card = document.createElement('div');
     const headlines = document.createElement('div');
     const author = document.createElement('div');
@@ -49,20 +51,20 @@ function newArticlesCreator(object){
     const newImg = document.createElement('img');
     const spanned = document.createElement('span');
 
-    //append elements//
+    // append elements //
     card.appendChild(headlines);
     card.appendChild(author);
     author.appendChild(imgClass);
     imgClass.appendChild(newImg);
     author.appendChild(spanned);
 
-    //classList Info//
+    // classList Info //
     card.classList.add('card');
     headlines.classList.add('headline');
     author.classList.add('author');
     imgClass.classList.add('img-container');
 
-    //text content//
+    // text content //
     author.textContent = `${object.authorName}` ;
     headlines.textContent = `${object.headline}`;
     imgClass.src =`${object.authorPhoto}`;

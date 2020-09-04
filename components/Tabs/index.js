@@ -9,9 +9,11 @@
 //    <div class="tab">topic here</div>
 
 
+// My CODE //
+
 const topicsTab = document.querySelector(".topics")
 axios.get('https://lambda-times-backend.herokuapp.com/topics')
-.then((res)=>{
+.then((res)=> {
     const user = res.data.topics;
     user.forEach((tab)=>{
     const newTab = topicCreator(tab);
@@ -21,7 +23,7 @@ axios.get('https://lambda-times-backend.herokuapp.com/topics')
 
 })
 
-function topicCreator(object){
+function topicCreator(object) {
 
     const tab = document.createElement('div');
 

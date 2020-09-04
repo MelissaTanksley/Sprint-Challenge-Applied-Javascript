@@ -28,6 +28,8 @@ A component is a small bit of re-useable code that help with elements and other 
 // Use your function to create a header
 // and append it to the DOM inside the div.header-container
 
+// My CODE //
+
 const mainHeader = document.querySelector('.header-container');
 
 mainHeader.appendChild(Header());
